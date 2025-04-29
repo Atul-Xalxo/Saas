@@ -29,7 +29,7 @@ const AppContextProvider = (props) => {
       toast.error(error.message);
     }
   };
-
+  
   const generateImage = async (prompt) => {
     try {
       const { data } = await axios.post(
