@@ -2,6 +2,7 @@ import User from "../models/userModel.js";
 import FormData from "form-data";
 import axios from "axios";
 
+
 export const generateImage = async (req, res) => {
   try {
     const { userId, prompt } = req.body;
@@ -12,11 +13,12 @@ export const generateImage = async (req, res) => {
       return res.json({ success: false, message: "Missing Details" });
     }
 
-    if (userId.creditBalance === 0 || User.creditBalance < 0) {
+    if (user.creditBalance === 0 || user.creditBalance < 0) {
       return res.json({
         success: false,
         message: "No Credit Balance",
         creditBalance: user.creditBalance,
+       
       });
     }
 
