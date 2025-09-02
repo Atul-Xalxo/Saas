@@ -101,7 +101,7 @@ const Login = () => {
             className="outline-none text-sm"
             type="email"
             name=""
-            id=""
+            id="email"
             placeholder="Email Id"
             required
           />
@@ -114,7 +114,7 @@ const Login = () => {
             className="outline-none text-sm"
             type="password"
             name=""
-            id=""
+            id="pass"
             placeholder="Password"
             required
           />
